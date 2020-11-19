@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joint Attention</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <script src="release/go.js"></script>
+  <script src="test.js"></script>
+
+</head>
+<body onload="init()">
+  <!-- mujtabachang: Title div start here  !-->
+  <div id="titleDiv">
+    <h1 id="title">GoJS Task</h1>
+      <ul>
+        <li>Relation text has been added. On every new node creation, there is a relation text automatically added</li>
+        <li>The relation text is editable. This can be done by double clicking</li>
+        <li>The timer can be set with values from 59:59. Format is mm:ss</li>
+        <li>Once the timer is 00:00, the diagram is no longer editable</li>
+        <li>   </li>
+        <li>There has been edits to the code. test.js is slightly changed. All the changes have the comment starting with "mujtabachang"</li>
+        <li>Complete new files have been created which are "timer.js" and "styles.css"</li>
+        <li>I tried my best to comment each line to make things easy to read</li>
+        <li>And obviously this HTML file (test.html) has been edited too</li>
+        <li>Rest of the files are unchanged</li>
+      </ul>
+  </div>
+  <!-- mujtabachang: Title div ends here  !-->
+
+<div id="sample">
+  <!-- mujtabachang: Timer related divs start here  !-->
+  <div id="timerDiv">
+    <!-- mujtabachang: Timer display text div  !-->
+    <div id="timerText">
+      <h1>19:51</h1>
+    </div>
+
+    <div id="timerSettings">
+      <br>
+      <!-- mujtabachang: Input for timer   !-->
+      <input id="timerInput" placeholder="Set your timer here. Format mm:ss for example 19:51"></input>
+      <!-- mujtabachang: Run Timer button  !-->
+      <button id="timerButton">Run Timer</button>
+    </div>
+  </div>
+
+  <!-- mujtabachang: Div for message when the timer runs out  !-->
+  <div id="timerOut">
+    <h2>Time has run out. The elements in the diagram can not be edited</h2>
+    <button onClick="javascript:document.location.reload();">Reload page</button>
+  </div>
+  <br>
+  <!-- mujtabachang: Timer related divs end here  !-->
+  <div id="myDiagramDiv" style="width:100%; height:600px"></div>
+
+  <!-- mujtabachang: Footer so that you do know who made this :)  !-->
+  <footer><a href="https://mujtabachang.com" rel="GoJS Task" target="_blank">Made with ❤️ by mujtabachang</a></footer>
+
+</div>
+<!-- mujtabachang: Script to load timer related stuff   !-->
+<script src="timer.js"></script>
+</body>
+</html>
